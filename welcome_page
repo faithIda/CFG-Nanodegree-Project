@@ -1,0 +1,19 @@
+def formatted_name(first_name, last_name):
+   full_name = first_name + ' ' + last_name
+   return full_name.title()
+
+print("Please enter the first and last names")
+
+while True:
+   first_name = input("Please enter the first name: ")
+   if first_name == '':
+    raise ValueError('Error, you must input a first name')
+
+   last_name = input("Please enter the last name: ")
+   if last_name == '':
+    raise ValueError('Error, you must input a last name')
+
+
+   result = formatted_name(first_name, last_name)
+   print("Welcome to Extra Help, "+ result,"!")
+   break
